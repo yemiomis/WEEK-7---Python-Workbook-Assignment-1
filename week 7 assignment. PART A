@@ -1,0 +1,108 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import pandas as pd\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "\n",
+    "df = pd.read_csv(\"C:/Users/Envy 360/Downloads/alaska.csv\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "<bound method NDFrame.head of    GEOID  SUMLEV  STATE  COUNTY  CBSA  CSA  NECTA  CNECTA    NAME  POP100  \\\n",
+       "0      2      40      2     NaN   NaN  NaN    NaN     NaN  Alaska  710231   \n",
+       "\n",
+       "    HU100  POP100.2000  HU100.2000  P001001  P001001.2000  \n",
+       "0  306967       626932      260978   710231        626932  >"
+      ]
+     },
+     "execution_count": 22,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df.head"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "df.to_csv('myalaskadata.csv',index=True,header=True)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "<bound method NDFrame.head of    GEOID  SUMLEV  STATE  COUNTY  CBSA  CSA  NECTA  CNECTA    NAME  POP100  \\\n",
+       "0      2      40      2     NaN   NaN  NaN    NaN     NaN  Alaska  710231   \n",
+       "\n",
+       "    HU100  POP100.2000  HU100.2000  P001001  P001001.2000  \n",
+       "0  306967       626932      260978   710231        626932  >"
+      ]
+     },
+     "execution_count": 24,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "df.head"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.4"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
